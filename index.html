@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gestión de Tripulaciones</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Gestión de Tripulaciones</h1>
+
+  <!-- Sección para crear personajes -->
+  <div id="create-character">
+    <h2>Crear Personaje</h2>
+    <input type="text" id="character-name" placeholder="Nombre ">
+    <input type="number" id="character-age" placeholder="Edad ">
+    <input type="number" id="character-height" placeholder="Estatura">
+    <input type="number" id="character-bounty" placeholder="Recompensa">
+    <button onclick="createCharacter()">Crear Personaje</button>
+  </div>
+
+  <!-- Sección para ver personajes -->
+  <div id="characters-list">
+    <h2>Personajes en la Tripulación</h2>
+    <button onclick="fetchBoats()">Ver Personajes</button>
+    <ul id="characters"></ul>
+  </div>
+
+
+<div>
+    <h3>Crear un nuevo barco</h3>
+    <input type="text" id="boat-name" placeholder="Nombre del barco">
+    <input type="text" id="boat-type" placeholder="Tipo de barco">
+    <input type="text" id="boat-roman_name" placeholder="Nombre Romano">
+    <button onclick="createBoat()">Crear Barco</button>
+</div>
+
+<!-- Contenedor para mostrar la lista de barcos -->
+<div id="boats">
+    <h3>Barcos Disponibles</h3>
+    <button onclick="fetchBoats()">Ver Barcos</button>
+    <ul id="boats-list"></ul>
+</div>
+
+
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>
