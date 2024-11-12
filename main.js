@@ -3,10 +3,8 @@ async function createCharacter() {
     const age = document.getElementById("character-age").value;
     const bounty = document.getElementById("character-bounty").value;
     const height = document.getElementById("character-height").value;
-    const type = document.getElementById("character-type").value;
-    const roman_name = document.getElementById("character-roman_name").value;
   
-    const characterData = { name, age,bounty,height,type,roman_name };
+    const characterData = { name, age,bounty,height};
     
     try {
       const response = await fetch('http://localhost:8080/api/client/characters', {
